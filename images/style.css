@@ -1,0 +1,181 @@
+/* Apply styles to the container */
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db; /* Blue background color */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* White text color */
+}
+
+.container h1 {
+    color: #ffffff; /* White text color for the heading */
+}
+
+.container p {
+    font-size: 18px; /* Increase font size for better readability */
+}
+
+.container a {
+    color: #1abc9c; /* Green link color */
+}
+
+.container a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Additional styles for button and input as previously discussed */
+
+
+/* Style the header */
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+/* Style the search input and button */
+.search {
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-around;
+}
+
+input[type="text"] {
+    width: 120px;
+    padding: 10px;
+    padding-left: 1rem;
+    font-size: 16px;
+   border:none;
+   border-radius: 4rem;
+   height:19px;
+outline: 1px solid #3498db;
+
+
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+}
+.weather-info img{
+    height:10rem;
+}
+
+
+#locationInput:hover{
+
+    outline:2px solid #3498db;
+    border:none;
+}
+
+/* button#getWeatherButton {
+    
+    padding: 11px 15px;
+    border-radius: 3rem;
+    font-size: 16px;
+    background-color: red;
+    color:white;
+    border:none;
+}
+
+button#getWeatherButton:hover {
+    background-color: aqua;
+    color:black;
+} */
+
+
+
+
+
+button#getWeatherButton {
+    padding: 11px 15px;
+    border-radius: 3rem;
+    font-size: 16px;
+    background-color: #00d90b; /* Blue color for the button */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+button#getWeatherButton:hover {
+    background-color: #1abc9c; /* Green color on hover */
+    color: #000000; /* Black text color on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+/* Style the weather details */
+.weather-details {
+    margin-top: 30px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Style individual weather data values */
+.weather-value {
+    font-size: 20px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Style the weather icon */
+.weather-icon {
+    max-width: 150px;
+    margin: 20px 0;
+}
+
+/* Style the error messages */
+.error {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Style the unit toggle */
+.unit-toggle {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Apply responsive design for smaller screens */
+@media screen and (max-width: 700px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+    }
+
+    button#getWeatherButton {
+        font-size: 16px;
+    }
+
+    .weather-details {
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .weather-value {
+        font-size: 16px;
+    }
+}
